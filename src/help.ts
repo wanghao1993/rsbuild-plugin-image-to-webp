@@ -1,8 +1,8 @@
-import { glob } from 'glob';
 import fs from 'fs-extra';
+import { glob } from 'glob';
 
-import sharp from 'sharp';
 import path from 'node:path';
+import sharp from 'sharp';
 import type { ConvertToWebPPluginOptions } from './index.ts';
 /**
  * 将指定路径下的图片转换为 WebP 格式
