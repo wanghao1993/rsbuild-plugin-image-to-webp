@@ -1,6 +1,13 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginExample } from '../src';
+import { RsPluginImageToWebp } from '../src';
 
 export default defineConfig({
-  plugins: [pluginExample()],
+  html: {
+    template: './index.html',
+  },
+  plugins: [
+    RsPluginImageToWebp({
+      exclude: ['src'],
+    }),
+  ],
 });

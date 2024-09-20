@@ -3,15 +3,22 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "target": "ES2020",
-    "lib": ["DOM", "ESNext"],
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
     "module": "Node16",
     "strict": true,
     "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "moduleResolution": "Node16"
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
